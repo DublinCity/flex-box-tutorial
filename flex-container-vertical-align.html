@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid royalblue;
+      width: 800px;
+      height: 500px;
+      list-style: none;
+      font-size: 2rem;
+      position: relative;
+      flex-wrap: wrap;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .flex-item {
+      width: 100px;
+      background-color: rosybrown;
+      border: 1px solid red;
+      margin: 1rem;
+      font-size: 2rem;
+      font-weight: 200;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .stretch {
+      align-content: stretch;
+    }
+
+    .flex-start {
+      align-content: flex-start;
+    }
+    .center {
+      align-content: center;
+    }
+  </style>
+</head>
+<body>
+  <ul class="container stretch">
+    <span>stretch </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+    <li class="flex-item">7</li>
+    <li class="flex-item">7</li>
+    <li class="flex-item">9</li>
+  </ul>
+
+  <ul class="container flex-start">
+    <span>flex-start </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+    <li class="flex-item">7</li>
+    <li class="flex-item">7</li>
+    <li class="flex-item">9</li>
+  </ul>
+
+  <ul class="container center">
+    <span>center </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+    <li class="flex-item">7</li>
+    <li class="flex-item">7</li>
+    <li class="flex-item">9</li>
+  </ul>
+</body>
+</html>
