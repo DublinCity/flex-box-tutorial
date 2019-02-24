@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      border: 2px solid royalblue;
+      width: 800px;
+      list-style: none;
+      font-size: 2rem;
+      position: relative;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      background-color: rosybrown;
+      border: 1px solid red;
+      margin: 1rem;
+      font-size: 2rem;
+      font-weight: 200;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .start {
+      justify-content: flex-start;
+    }
+
+    .end {
+      justify-content: flex-end;
+    }
+    .center {
+      justify-content: center;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+    .space-around {
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <ul class="container">
+    <span>Default:start </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+  </ul>
+
+  <ul class="container center">
+    <span>center </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+  </ul>
+  
+  <ul class="container end">
+    <span>end </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+  </ul>
+
+  <ul class="container space-between">
+    <span>space-between </span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+  </ul>
+
+    <ul class="container space-around">
+      <span>space-around </span>
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+    </ul>
+
+</body>
+</html>
