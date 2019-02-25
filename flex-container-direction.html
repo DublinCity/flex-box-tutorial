@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    ul {
+      padding: 0;
+    }
+    .container-width {
+      display: flex;
+      border: 2px solid royalblue;
+      width: 500px;
+      list-style: none;
+      position: relative;
+    }
+
+    .container-height {
+      display: flex;
+      border: 2px solid royalblue;
+      height: 500px;
+      list-style: none;
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .flex-item {
+      background-color: rosybrown;
+      border: 1px solid red;
+      margin: 1rem;
+      font-weight: 200;
+      text-align: center;
+      flex-basis: 50px;
+      width: 200px;
+    }
+
+    .row{
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .column {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="container-width row">
+    <span>direction:row</span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+
+  <ul class="container-height column">
+    <span>direction: column</span>
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+</body>
+</html>
