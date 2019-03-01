@@ -1,65 +1,112 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    .wrapper > * {
-      border: 1px solid royalblue;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper > * {
+        border: 1px solid royalblue;
+      }
 
-    .wrapper > * > * {
-      border: 1px solid salmon;
-    }
+      .wrapper > * > * {
+        border: 1px solid salmon;
+      }
 
-    .wrapper > * > * > *{
-      border: 1px solid forestgreen;
-    }
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-    }
-    .main {
-      flex: 6;
-      display: flex;
+      .wrapper > * > * > * {
+        border: 1px solid forestgreen;
+      }
 
-    }
-    .contents {
-      flex:20;
-      display: flex;
-      flex-direction: column;
-    }
-    .contents> .music-head {
-      flex: 3;
-    }
-    .contents > .music-list {
-      flex: 4;
-      list-style: none;
-    }
-    .left-nav {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      /* justify-content: space-between; */
-    }
-    .left-nav > .nav-item {
-      flex: 1;
-    }
-    .footer {
-      flex: 1;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
+      .wrapper > * > * > * > * {
+        border: 1px solid goldenrod;
+      }
+      .wrapper > * > * > * > * > * {
+        border: 1px solid darkslateblue;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+      .main {
+        flex: 6;
+        display: flex;
+      }
+      .contents {
+        flex: 20;
+        display: flex;
+        flex-direction: column;
+      }
+      .contents > .music-head {
+        flex: 3;
+        display: flex;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      .music-head > .jacket {
+        flex: 3;
+      }
+      .music-head > .album {
+        flex: 7;
+        display: flex;
+        flex-direction: column;
+      }
+      .music-head h1,
+      p,
+      span {
+        margin: 0;
+        padding: 1rem;
+      }
+
+      .contents > .music-list {
+        display: flex;
+        flex-direction: column;
+        flex: 4;
+        list-style: none;
+      }
+
+      .music-list li {
+        flex: auto;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .music-list li> * {
+        flex: 1;
+      }
+
+      .buttons {
+        display: flex;
+        margin-top: auto;
+        align-self: flex-start;
+      }
+      .buttons > * {
+        margin: 0 1rem;
+      }
+
+      .left-nav {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        /* justify-content: space-between; */
+      }
+      .left-nav > .nav-item {
+        flex: 1;
+      }
+      .footer {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
       <section class="main">
         <div class="left-nav">
           <li class="nav-item">icon</li>
@@ -74,20 +121,66 @@
           <li class="nav-item">icon</li>
         </div>
         <div class="contents">
+          <!-- main-contents -->
           <div class="music-head">
-
+            <div class="jacket"><img src="" alt="" /></div>
+            <div class="album">
+              <h1 class="title">title</h1>
+              <div class="description">
+                <span>dexscriptipn</span>
+                <p>something in there</p>
+              </div>
+              <div class="buttons">
+                <div class="play">button</div>
+                <div class="add">button</div>
+                <div class="more">button</div>
+              </div>
+            </div>
           </div>
+          <!-- list-contents -->
           <div class="music-list">
-            <li class="music-list-item"></li>
-            <li class="music-list-item"></li>
-            <li class="music-list-item"></li>
-            <li class="music-list-item"></li>
+            <li>
+              <p>1. One Dance</p>
+              <p>Crake feat CatKid &amp; Cyla</p>
+              <p>2:54</p>
+              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+            </li>
+            <li>
+              <p>1. One Dance</p>
+              <p>Crake feat CatKid &amp; Cyla</p>
+              <p>2:54</p>
+              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+            </li>
+            <li>
+              <p>1. One Dance</p>
+              <p>Crake feat CatKid &amp; Cyla</p>
+              <p>2:54</p>
+              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+            </li>
+            <li>
+              <p>1. One Dance</p>
+              <p>Crake feat CatKid &amp; Cyla</p>
+              <p>2:54</p>
+              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+            </li>
+            <li>
+              <p>1. One Dance</p>
+              <p>Crake feat CatKid &amp; Cyla</p>
+              <p>2:54</p>
+              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+            </li>
+            <li>
+              <p>1. One Dance</p>
+              <p>Crake feat CatKid &amp; Cyla</p>
+              <p>2:54</p>
+              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+            </li>
           </div>
         </div>
       </section>
       <div class="footer">
         footer
       </div>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
