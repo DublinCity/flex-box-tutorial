@@ -6,28 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
         margin: 0;
         padding: 0;
       }
-      /* .wrapper > * {
-        border: 1px solid royalblue;
-      }
-
-      .wrapper > * > * {
-        border: 1px solid salmon;
-      }
-
-      .wrapper > * > * > * {
-        border: 1px solid forestgreen;
-      }
-
-      .wrapper > * > * > * > * {
-        border: 1px solid goldenrod;
-      }
-      .wrapper > * > * > * > * > * {
-        border: 1px solid darkslateblue;
-      } */
       .wrapper {
         display: flex;
         flex-direction: column;
@@ -35,16 +20,16 @@
         height: 100%;
       }
       .main {
-        flex: 6;
+        flex: 6 0 auto;
         display: flex;
       }
       .contents {
-        flex: 20;
+        flex: 20 0 auto;
         display: flex;
         flex-direction: column;
       }
       .contents > .music-head {
-        flex: 3;
+        flex: 0 0 280px;
         display: flex;
         margin: 0;
         padding: 2rem;
@@ -77,21 +62,21 @@
       .contents > .music-list {
         display: flex;
         flex-direction: column;
-        flex: 4;
+        flex: 1 0 auto;
         list-style: none;
+        padding: 10px;
       }
       .contents> .music-list li:nth-child(2n) {
         background-color: #e8e8e9;
       }
 
       .music-list li {
-        flex: auto;
         display: flex;
         justify-content: space-around;
       }
 
-      .music-list li> * {
-        flex: 1;
+      .music-list p {
+        flex: 0 0 25%;
       }
 
       .buttons {
@@ -107,7 +92,7 @@
       }
 
       .left-nav {
-        flex: 1;
+        flex: 0 0 40px;
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -116,11 +101,9 @@
       }
       .left-nav > * {
         display: flex;
+        flex: 1 0 50px;
         justify-content: center;
         align-items: center;
-      }
-      .left-nav > .nav-item {
-        flex: 1;
       }
       .footer {
         box-sizing: border-box;
@@ -191,24 +174,6 @@
           </div>
           <!-- list-contents -->
           <div class="music-list">
-            <li>
-              <p>1. One Dance</p>
-              <p>Crake feat CatKid &amp; Cyla</p>
-              <p>2:54</p>
-              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
-            </li>
-            <li>
-              <p>1. One Dance</p>
-              <p>Crake feat CatKid &amp; Cyla</p>
-              <p>2:54</p>
-              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
-            </li>
-            <li>
-              <p>1. One Dance</p>
-              <p>Crake feat CatKid &amp; Cyla</p>
-              <p>2:54</p>
-              <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
-            </li>
             <li>
               <p>1. One Dance</p>
               <p>Crake feat CatKid &amp; Cyla</p>
