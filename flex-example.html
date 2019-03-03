@@ -4,12 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
       body {
         margin: 0;
         padding: 0;
       }
-      .wrapper > * {
+      /* .wrapper > * {
         border: 1px solid royalblue;
       }
 
@@ -26,7 +27,7 @@
       }
       .wrapper > * > * > * > * > * {
         border: 1px solid darkslateblue;
-      }
+      } */
       .wrapper {
         display: flex;
         flex-direction: column;
@@ -47,21 +48,30 @@
         display: flex;
         margin: 0;
         padding: 2rem;
+        background-color: #4e4e4e;
+        color: white;
       }
 
       .music-head > .jacket {
-        flex: 3;
+        height: 100%;
+      }
+      .music-head > .jacket > img {
+        /* height: 100%; */
       }
       .music-head > .album {
-        flex: 7;
+        /* flex: 7; */
+        flex: 1 0 550px;
         display: flex;
         flex-direction: column;
+        padding-left: 3rem;
+        padding-bottom: .5rem;
       }
       .music-head h1,
       p,
       span {
         margin: 0;
         padding: 1rem;
+        font-weight: 200;
       }
 
       .contents > .music-list {
@@ -69,6 +79,9 @@
         flex-direction: column;
         flex: 4;
         list-style: none;
+      }
+      .contents> .music-list li:nth-child(2n) {
+        background-color: #e8e8e9;
       }
 
       .music-list li {
@@ -85,9 +98,12 @@
         display: flex;
         margin-top: auto;
         align-self: flex-start;
+        font-size: .8rem;
+        font-weight: 200;
       }
       .buttons > * {
         margin: 0 1rem;
+        
       }
 
       .left-nav {
@@ -95,13 +111,49 @@
         display: flex;
         flex-direction: column;
         list-style: none;
+        background-color: #f2f2f2;
         /* justify-content: space-between; */
+      }
+      .left-nav > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .left-nav > .nav-item {
         flex: 1;
       }
       .footer {
-        flex: 1;
+        box-sizing: border-box;
+        flex: 0 0 90px;
+        display: flex;
+        padding: 1rem;
+        margin-top: auto;
+        background-color: rgba(61, 100, 158, .9);
+        color: white;
+      }
+
+      .bottom-album {
+        align-self: center;
+      }
+      .bottom-album p {
+        margin: .3rem;
+        padding: 0;
+        margin-left: 1rem;
+      }
+      .bottom-buttons {
+        align-self: center;
+      }
+      .bottom-jacket img {
+        height: 100%;
+      }
+      .footer .bottom-buttons {
+        display: inline-flex;
+        /* margin: 1rem; */
+        margin-left: auto;
+        margin-right: 1rem;
+      }
+      .footer .bottom-buttons > * {
+        margin-right: 1rem;
       }
     </style>
   </head>
@@ -109,31 +161,31 @@
     <div class="wrapper">
       <section class="main">
         <div class="left-nav">
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
-          <li class="nav-item">icon</li>
+          <li class="nav-item"><i class="fas fa-play"></i></li>
+          <li class="nav-item"><i class="fas fa-headphones-alt"></i></li>
+          <li class="nav-item"><i class="fas fa-headphones-alt"></i></li>
+          <li class="nav-item"><i class="fas fa-headphones-alt"></i></li>
+          <li class="nav-item"><i class="fas fa-headphones-alt"></i></li>
+          <li class="nav-item"><i class="fas fa-music"></i></i></li>
+          <li class="nav-item"><i class="fas fa-music"></i></i></li>
+          <li class="nav-item"><i class="fas fa-music"></i></i></li>
+          <li class="nav-item"><i class="fas fa-headphones"></i></li>
+          <li class="nav-item"><i class="fas fa-headphones"></i></li>
         </div>
         <div class="contents">
           <!-- main-contents -->
           <div class="music-head">
-            <div class="jacket"><img src="" alt="" /></div>
+            <div class="jacket"><img src="http://i.imgur.com/xDSTaej.jpg"></div>
             <div class="album">
-              <h1 class="title">title</h1>
+              <h1 class="title">CattyBoard Top 100 Single Charts (11.06.36)</h1>
               <div class="description">
-                <span>dexscriptipn</span>
-                <p>something in there</p>
+                <span>Unknown Artist</span>
+                <p>2016 . Charts . 100 songs</p>
               </div>
               <div class="buttons">
-                <div class="play">button</div>
-                <div class="add">button</div>
-                <div class="more">button</div>
+                <div class="play"><i class="fas fa-play"> PLAY</i></div>
+                <div class="add"><i class="fas fa-headphones"> AUDIO</i></div>
+                <div class="more"><i class="fas fa-compress"> MORE</i></div>
               </div>
             </div>
           </div>
@@ -179,7 +231,18 @@
         </div>
       </section>
       <div class="footer">
-        footer
+        <div class="bottom-jacket">
+            <img src="http://i.imgur.com/xDSTaej.jpg">
+        </div>
+        <div class="bottom-album">
+            <p>Unknown Artist</p>
+            <p>2016 . Charts . 100 songs</p>
+        </div>
+        <div class="bottom-buttons">
+            <div class="play"><i class="fas fa-play"> PLAY</i></div>
+            <div class="add"><i class="fas fa-headphones"> AUDIO</i></div>
+            <div class="more"><i class="fas fa-compress"> MORE</i></div>
+        </div>
       </div>
     </div>
   </body>
